@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root{
+        --dark-gray: #333F50;
+        --oranye:#FFD966;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-gray);
+}
+.jumbotron {
+    padding: 20px;
+    background-color: var(--dark-gray);
+    font-size: 20px;
+    color: white;
+    box-shadow: -4px 5px 12px -4px rgba(255,217,102,0.71);
+    border-radius: 15px;
+}
+.container{
+    margin: auto;
+    padding: 0 20px;
+}
+
+nav {
+    text-align: right;
+    top: 0;
+    overflow: auto;
+    z-index: 1;
+}
+
+ nav li, nav li a {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--oranye);
+    padding-top: 15px;
+ }
+
+ nav li:hover,nav li a:hover,#reachMe a:hover{
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+ }
+ nav h1{
+     float: left;
+     color: var(--oranye);
+    }
+    
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+    
+#content{
+    margin: 50px 108px 0 0; 
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: -4px 5px 12px -4px rgba(255,217,102,0.71);
+    color: rgb(173, 171, 171);
+    float: right;
+    width: 55%;
+    text-align: justify;
+}
+
+#aboutMe{
+    margin: 10px; 
+    padding: 10px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    float: right;
+    background-color: rgb(78, 108, 134);
+    border: dashed 1px #FFD966 ;
+}
+
+#aboutMe h2,#skill h2{
+    border-bottom: dashed 1px #FFD966 ;
+    padding-bottom: 10px;
+}
+
+#aboutMe p,#downloadCv p{
+    margin: 10px;
+}
+
+#downloadCv{
+    margin: 8px 13px; 
+    padding: 55px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    float: right;
+    background-color: rgb(78, 108, 134);
+    border: dashed 1px #FFD966 ;
+    width: 40%;
+}
+
+#downloadCv h2 a{
+    padding-bottom: 10px;
+    list-style: none;
+    text-decoration: none;
+    color: var(--oranye);
+}
+
+
+#skill{
+    margin: 10px 27px; 
+    padding: 10px;
+    border-radius: 15px;
+    color: var(--oranye);
+    float: left;
+    width: 40%;
+    background-color: rgb(78, 108, 134);
+    border: dashed 1px #FFD966 ;
+    text-align: center;
+}
+
+#skill ul{
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    color: var(--oranye);
+}
+
+#skill li,#reachMe li{
+    list-style-type: none;
+    margin: 10px;
+    display: inline-block;
+    font-size: 23px;
+}
+
+#aside{
+    position: relative;
+    margin: 50px 10px 10px 30px ; 
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: -4px 5px 12px -4px rgba(255,217,102,0.71);
+    color: rgb(173, 171, 171);
+    float: left;
+    width: 30%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+#cardID{
+    margin: 10px; 
+    padding: 10px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    float: left;
+    background-color: rgb(78, 108, 134);
+    border: dashed 1px #FFD966 ;
+}
+
+
+#cardID p{
+    margin: 10px;
+    text-align: center;
+    
+}
+#cardID img{
+    border-radius: 5%;
+    margin: 10px;
+
+}
+
+#reachMe{
+    margin: 10px; 
+    padding: 10px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    float: left;
+    background-color: rgb(78, 108, 134);
+    border: dashed 1px #FFD966 ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reachMe h2,#cardID h2{
+    border-bottom: dashed 1px #FFD966 ;
+    padding-bottom: 10px;
+}
+
+#reachMe a{
+    color: var(--oranye);
+}
+
+#aside h2,#content h2 {
+    color: var(--oranye);
+    text-align: center;
+}
+
+#project{
+    margin: 10px; 
+    padding: 10px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(78, 108, 134);
+    border: dashed 1px #FFD966 ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-around;
+    
+    
+}
+
+#project h2{
+    border-bottom: dashed 1px #FFD966 ;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+
+.card-project{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 23px;
+    margin: 10px;
+    width: 26%;
+}
+
+.card-title{
+    margin: 10px 0 5px 10px;
+    text-align: center;
+}
+
+.card-project img{
+    width: 100%;
+}
+
+
+.footer{
+    margin: 50px 10px 10px 30px ; 
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: -4px 5px 12px -4px rgba(255,217,102,0.71);
+    color: rgb(173, 171, 171);
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+.footer p{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(78, 108, 134);
+    border:ridge 1px #FFD966 ;
+}
+
+.card.modalAbout,.modalProject,.modalReachMe{
+    position: absolute;
+    top: 60%;
+    left: 50%;  
+    transform: translate(50%, -63%);
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: -4px 5px 12px -4px rgba(255,217,102,0.71);
+    z-index: 2;
+    transition: all 1s ease-in;
+    
+}
+
+.modalProject{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(78, 108, 134);
+    border: dashed 1px #FFD966 ;
+}
+
+.modalProject .wrappProyek{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.transparant-block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: -50px;
+    padding: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--oranye);
+    transition: all 5s ease-in-out;
+}
+
+.deactive{
+    display: none;
+}
+
+.popReachMe,.modalReachMe {
+    width:100% ;
+}
+
+.popReachMe li a{
+    color: var(--oranye);
+    text-decoration: none;
+}
+.popReachMe ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+
+/* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 992px (SmartPhone) */
+@media screen and (max-width: 992px) {
+    
+    nav h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    nav ul,nav li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; 
+        padding: 5px 0;
+        margin: 3px 8px 0 0;
+        width: 100%;
+        /* flex-wrap: wrap; */
+
+
+    }
+    #aside{
+        border-radius: 15px;
+        width: 100%;
+        padding: 0 ;
+        margin: 0 ;
+        box-shadow: none;
+    }
+
+    #content{
+        border-radius: 15px;
+        width: 100%;
+        margin: 0 ;
+        padding: 0;
+        box-shadow:none ;
+    }
+
+    #downloadCv h2{
+       font-size: 15px;
+       text-align: center;
+    }
+
+
+    #skill{
+        padding: 0;
+        width: 100%;
+        margin: 0 ;
+    }
+
+    #downloadCv{
+        padding: 10px 0 0 0;
+        text-align: center;
+        width: 50%;
+    }
+
+    #skill h2{
+        margin: 7px;
+    }
+
+    .card-project{
+        width: 100%;
+    }
+
+
+    .footer{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .card.modalAbout,.modalProject,.modalReachMe{
+        top: 60%;
+        left: 50%;  
+        transform: translate(-54%, -63%);
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 15px;
+        box-shadow: -4px 5px 12px -4px rgba(255,217,102,0.71);
+        z-index: 2;
+        transition: all 1s ease-in;
+    }
+
+    .card.modalAbout,.modalReachMe{
+        position: fixed;
+    }
+   
+    .modalProject{
+        position: relative;
+    }
+
+    .transparant-block {
+        position: absolute;
+        width: 100%;
+        height: 300%;
+        background-color: #000;
+        color: #fff;
+        opacity: .8;
+        z-index: 1;
+        transition: all 0.5s ease;
+        overflow: auto;
+    }
+    
+    .close{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -22px;
+        right: 0px;
+        padding: 10px;
+        font-size: 30px;
+        cursor: pointer;
+        color: var(--oranye);
+        transition: all 5s ease-in-out;
+    }
+    
+  }
